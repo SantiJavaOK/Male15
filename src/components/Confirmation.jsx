@@ -1,13 +1,13 @@
+import { useState } from "react";
 import Reveal from "./Reveal";
 
 function Confirmation() {
   const phone = "5491540749601";
 
-  const message =
-    "Hola! Quiero confirmar mi asistencia a los 15 de Male. 💕🎉";
+  const [name, setName] = useState("");
 
   const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
-    message
+    `Hola Male! Soy ${name.trim()} y quiero confirmar mi asistencia a tus 15. 💕🎉`
   )}`;
 
   return (
@@ -37,12 +37,37 @@ function Confirmation() {
         <div className="confirmation-divider" />
       </Reveal>
 
-      <Reveal delay={800}>
+      <Reveal delay={700}>
+        <label
+          htmlFor="guest-name"
+          className="confirmation-label"
+        >
+          ¿CUÁL ES TU NOMBRE?
+        </label>
+
+        <input
+          id="guest-name"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Escribí tu nombre"
+          className="confirmation-input"
+        />
+      </Reveal>
+
+      <Reveal delay={900}>
         <a
-          href={whatsappUrl}
+          href={name.trim() ? whatsappUrl : undefined}
           target="_blank"
           rel="noopener noreferrer"
-          className="whatsapp-button"
+          className={`whatsapp-button ${
+            !name.trim() ? "whatsapp-disabled" : ""
+          }`}
+          onClick={(e) => {
+            if (!name.trim()) {
+              e.preventDefault();
+            }
+          }}
         >
           <span className="whatsapp-icon">
             💌

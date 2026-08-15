@@ -545,13 +545,13 @@ section {
   align-items: center;
   justify-content: center;
 
-  gap: 15px;
+  gap: 12px;
 
-  width: 230px;
+  width: 210px;
 
-  min-height: 70px;
+  min-height: 50px;
 
-  padding: 15px 25px;
+  padding: 10px 20px;
 
   border: 1px solid #c9b27c;
 
@@ -561,18 +561,22 @@ section {
 
   color: #f5f1e8;
 
-  font-size: 0.7rem;
+  font-size: 0.65rem;
 
   font-weight: 500;
 
-  letter-spacing: 0.18rem;
+  line-height: 1.4;
+
+  letter-spacing: 0.15rem;
 
   text-align: center;
 
   transition:
-  background 0.4s ease,
-  transform 0.4s ease,
-  box-shadow 0.4s ease;
+    background 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+
+  animation: whatsappPulse 3s ease-in-out infinite;
 }
 
 .whatsapp-icon {
@@ -1005,4 +1009,68 @@ section {
   color: #c9b27c;
 
   opacity: 1;
+}
+
+.confirmation-label {
+  margin-top: 10px;
+
+  color: #aaa;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 0.25rem;
+}
+
+.confirmation-input {
+  width: min(320px, 85vw);
+
+  margin-top: 15px;
+
+  padding: 14px 20px;
+
+  border: 1px solid rgba(201, 178, 124, 0.5);
+
+  border-radius: 30px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #f5f1e8;
+
+  font-family: Georgia, serif;
+
+  font-size: 1rem;
+
+  text-align: center;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.confirmation-input::placeholder {
+  color: #777;
+}
+
+.confirmation-input:focus {
+  border-color: #c9b27c;
+
+  background: rgba(201, 178, 124, 0.06);
+}
+
+.confirmation .whatsapp-button {
+  margin-top: 35px;
+}
+
+.dress-code-note {
+  margin-top: 70px;
+
+  color: #aaa;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 0.25rem;
+
+  text-transform: uppercase;
 }

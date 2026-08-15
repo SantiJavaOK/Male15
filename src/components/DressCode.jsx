@@ -39,6 +39,12 @@ function DressCode() {
           </p>
         </Reveal>
 
+<Reveal delay={1400}>
+  <p className="dress-code-note">
+    EVITÁ TONOS CLAROS
+  </p>
+</Reveal>
+
       </div>
 
     </section>
