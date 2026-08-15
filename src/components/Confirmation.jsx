@@ -14,26 +14,53 @@ function Confirmation() {
     <section className="confirmation">
 
       <Reveal>
+        <div className="confirmation-decoration">
+          ✦
+        </div>
+      </Reveal>
+
+      <Reveal delay={200}>
         <p className="section-title">
           ¿NOS ACOMPAÑÁS?
         </p>
       </Reveal>
 
-      <Reveal>
-        <p>
-          Confirmá tu asistencia
+      <Reveal delay={400}>
+        <p className="confirmation-text">
+          Me encantaría compartir
+          <br />
+          esta noche con vos.
         </p>
       </Reveal>
 
-      <Reveal>
+      <Reveal delay={600}>
+        <div className="confirmation-divider" />
+      </Reveal>
+
+      <Reveal delay={800}>
         <a
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="button"
+          className="whatsapp-button"
         >
-          💌 Confirmar asistencia
+          <span className="whatsapp-icon">
+            💌
+          </span>
+
+          <span>
+            CONFIRMAR
+            <br />
+            ASISTENCIA
+          </span>
         </a>
+      </Reveal>
+
+      <Reveal delay={1200}>
+        <div className="confirmation-footer">
+          <span>MALE</span>
+          <span className="confirmation-star">✦</span>
+        </div>
       </Reveal>
 
     </section>
