@@ -1,26 +1,43 @@
 import Reveal from "./Reveal";
+import Particles from "./Particles";
 
 function Message() {
   return (
     <section className="message">
 
-      <Reveal delay={0}>
-        <p className="message-line">
-          Hay momentos que se convierten
-        </p>
-      </Reveal>
+      <Particles count={18} />
 
-      <Reveal delay={500}>
-        <p className="message-line">
-          en recuerdos para siempre...
-        </p>
-      </Reveal>
+      <div className="message-content">
 
-      <Reveal delay={1000}>
-        <p className="message-highlight">
-          Quiero compartir uno de ellos con vos.
-        </p>
-      </Reveal>
+        <Reveal>
+          <p className="message-intro">
+            Hay momentos que se convierten
+          </p>
+        </Reveal>
+
+        <Reveal delay={500}>
+          <p className="message-main">
+            en recuerdos
+            <br />
+            para siempre...
+          </p>
+        </Reveal>
+
+        <Reveal delay={1000}>
+          <div className="message-star">
+            ✦
+          </div>
+        </Reveal>
+
+        <Reveal delay={1300}>
+          <p className="message-highlight">
+            Quiero compartir
+            <br />
+            uno de ellos con vos.
+          </p>
+        </Reveal>
+
+      </div>
 
     </section>
   );
