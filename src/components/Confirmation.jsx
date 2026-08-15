@@ -12,7 +12,7 @@ function Confirmation() {
   )}`;
 
   const declineUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
-    `Hola Male! Soy ${name.trim()}. Lamentablemente no voy a poder asistir a tus 15. Te aviso para que lo tengas en cuenta. ❤️`
+    `Perdón, NO podre asistir: ${name.trim()}. 👎`
   )}`;
 
   return (
