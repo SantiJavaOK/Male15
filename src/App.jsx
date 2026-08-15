@@ -1,7 +1,7 @@
 import "./App.css";
 
 import Hero from "./components/Hero";
-import EventInfo from "./components/EventInfo";
+import Message from "./components/Message";
 import Location from "./components/Location";
 import Confirmation from "./components/Confirmation";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <main>
       <Hero />
-      <EventInfo />
+      <Message />
       <Location />
       <Confirmation />
     </main>
