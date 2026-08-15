@@ -1,11 +1,37 @@
 import Reveal from "./Reveal";
 
+const particles = Array.from({ length: 25 }, (_, index) => ({
+  id: index,
+  left: `${Math.random() * 100}%`,
+  top: `${Math.random() * 100}%`,
+  size: `${Math.random() * 3 + 1}px`,
+  delay: `${Math.random() * 5}s`,
+  duration: `${Math.random() * 4 + 4}s`,
+}));
+
 function Location() {
   const mapsUrl =
     "https://maps.app.goo.gl/pTvvHnwyBPg4oSg46";
 
   return (
     <section className="location">
+
+      <div className="location-particles">
+        {particles.map((particle) => (
+          <span
+            key={particle.id}
+            className="particle"
+            style={{
+              left: particle.left,
+              top: particle.top,
+              width: particle.size,
+              height: particle.size,
+              animationDelay: particle.delay,
+              animationDuration: particle.duration,
+            }}
+          />
+        ))}
+      </div>
 
       <Reveal>
         <div className="location-decoration">
@@ -46,7 +72,10 @@ function Location() {
           rel="noopener noreferrer"
           className="location-button"
         >
-          <span className="location-icon">⌖</span>
+          <span className="location-icon">
+            ⌖
+          </span>
+
           CÓMO LLEGAR
         </a>
       </Reveal>

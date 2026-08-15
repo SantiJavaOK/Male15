@@ -354,3 +354,59 @@ section {
 
   color: #c9b27c;
 }
+
+.location-particles {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background: #e8e8e8;
+
+  box-shadow:
+    0 0 5px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(220, 220, 220, 0.4);
+
+  opacity: 0;
+
+  animation:
+    particleFloat
+    ease-in-out
+    infinite;
+}
+
+@keyframes particleFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.7);
+  }
+
+  25% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1);
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-35px) scale(0.7);
+  }
+}
