@@ -5,6 +5,7 @@ import Message from "./components/Message";
 import Location from "./components/Location";
 import Confirmation from "./components/Confirmation";
 import DressCode from "./components/DressCode";
+import Gift from "./components/Gift";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Message />
       <Location />
       <DressCode />
+      <Gift />
       <Confirmation />
     </main>
   );
