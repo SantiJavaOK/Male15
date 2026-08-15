@@ -32,7 +32,7 @@ function Hero() {
       <Reveal>
   <p className="hero-time">
     <span>21:30 HS</span>
-    <span className="hero-time-separator">A</span>
+    <span className="hero-time-separator">a</span>
     <span>2:30 HS</span>
   </p>
 </Reveal>
