@@ -7,7 +7,7 @@ function Confirmation() {
   const [name, setName] = useState("");
 
   const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
-    `Hola Male! Soy ${name.trim()} y quiero confirmar mi asistencia a tus 15. 💕🎉`
+    `Confirmo asistencia al cumple de Male: ${name.trim()}  💕🎉`
   )}`;
 
   return (
