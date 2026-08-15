@@ -8,23 +8,46 @@ function Location() {
     <section className="location">
 
       <Reveal>
+        <div className="location-decoration">
+          ✦
+        </div>
+      </Reveal>
+
+      <Reveal delay={200}>
         <p className="section-title">
-          TE ESPERO EN
+          NOS ENCONTRAMOS EN
         </p>
       </Reveal>
 
-      <Reveal>
+      <Reveal delay={400}>
         <h2>GLOW</h2>
       </Reveal>
 
-      <Reveal>
+      <Reveal delay={600}>
+        <div className="location-divider" />
+      </Reveal>
+
+      <Reveal delay={800}>
+        <p className="location-date">
+          SÁBADO 26 DE SEPTIEMBRE
+        </p>
+      </Reveal>
+
+      <Reveal delay={1000}>
+        <p className="location-time">
+          21:30 HS
+        </p>
+      </Reveal>
+
+      <Reveal delay={1200}>
         <a
           href={mapsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="button"
+          className="location-button"
         >
-          📍 Cómo llegar
+          <span className="location-icon">⌖</span>
+          CÓMO LLEGAR
         </a>
       </Reveal>
 
