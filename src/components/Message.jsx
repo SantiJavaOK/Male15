@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import Particles from "./Particles";
+import "./Message.css";
 
 function Message() {
   return (

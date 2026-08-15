@@ -1,3 +1,5 @@
+import "./Particles.css";
+
 function Particles({ count = 25 }) {
   const particles = Array.from({ length: count }, (_, index) => ({
     id: index,

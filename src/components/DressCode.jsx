@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import Particles from "./Particles";
+import "./DressCode.css";
 
 function DressCode() {
   return (

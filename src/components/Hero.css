@@ -1,0 +1,118 @@
+.hero {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #252525 0%,
+      #111111 45%,
+      #050505 100%
+    );
+
+  color: #f5f1e8;
+}
+
+.hero-subtitle {
+  margin: 0;
+
+  font-size: 0.8rem;
+  letter-spacing: 0.6rem;
+
+  color: #c9b27c;
+}
+
+.hero h1 {
+  margin: 20px 0;
+
+  font-family: "Parisienne", cursive;
+
+  font-size: clamp(5rem, 20vw, 8rem);
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: 0;
+
+  color: #f5f1e8;
+}
+
+.hero-divider {
+  width: 70px;
+  height: 1px;
+
+  margin: 10px auto 30px;
+
+  background: #c9b27c;
+}
+
+.hero-date {
+  margin: 0;
+
+  font-size: 1rem;
+
+  letter-spacing: 0.3rem;
+}
+
+.hero-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 4px;
+
+  margin-top: 12px;
+
+  font-size: 1.1rem;
+
+  letter-spacing: 0.25rem;
+
+  color: #c9b27c;
+}
+
+.hero-time-separator {
+  font-size: 0.7rem;
+
+  letter-spacing: 0.1rem;
+
+  margin: 2px 0;
+
+  color: #f5f1e8;
+}
+
+.hero-decoration {
+  position: absolute;
+
+  color: #c9b27c;
+
+  opacity: 0.6;
+
+  font-size: 1.5rem;
+}
+
+.hero-decoration-top {
+  top: 12%;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.hero .particles {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.hero > *:not(.particles) {
+  z-index: 1;
+}

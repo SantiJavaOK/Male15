@@ -1,0 +1,137 @@
+.dress-code {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #202020 0%,
+      #0d0d0d 60%,
+      #050505 100%
+    );
+
+  color: #f5f1e8;
+}
+
+.dress-code .particles {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+.dress-code-content {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.dress-code-star {
+  position: absolute;
+
+  top: 12%;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+
+  color: #c9b27c;
+
+  font-size: 1.4rem;
+
+  opacity: 0.7;
+
+  z-index: 3;
+}
+
+.dress-code-title {
+  margin: 0;
+
+  color: #c9b27c;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.5rem;
+}
+
+.dress-code h2 {
+  margin: 35px 0;
+
+  max-width: 90%;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(2.5rem, 9vw, 5rem);
+
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  letter-spacing: 0.04em;
+
+  text-align: center;
+}
+
+.dress-code-divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color: #c9b27c;
+
+  font-size: 0.8rem;
+}
+
+.dress-code-divider::before,
+.dress-code-divider::after {
+  content: "";
+
+  display: block;
+
+  width: 45px;
+
+  height: 1px;
+
+  background: rgba(201, 178, 124, 0.5);
+}
+
+.dress-code-text {
+  margin-top: 35px;
+
+  color: #aaa;
+
+  font-size: 0.85rem;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.12rem;
+}
+
+.dress-code-note {
+  margin-top: 70px;
+
+  color: #c9b27c;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.25rem;
+
+  text-transform: uppercase;
+}

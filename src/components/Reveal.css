@@ -1,0 +1,72 @@
+.reveal {
+  opacity: 0;
+
+  transform:
+    translateY(35px)
+    scale(0.98);
+
+  filter: blur(4px);
+
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease,
+    filter 1.2s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+
+  transform:
+    translateY(0)
+    scale(1);
+
+  filter: blur(0);
+}
+
+.scroll-indicator {
+  position: absolute;
+
+  bottom: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #aaa;
+
+  font-size: 0.6rem;
+
+  letter-spacing: 0.2rem;
+
+  z-index: 2;
+}
+
+.scroll-arrow {
+  font-size: 1.2rem;
+
+  animation:
+    scrollDown
+    1.8s infinite ease-in-out;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,112 @@
+.message {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      #202020 0%,
+      #0d0d0d 65%,
+      #050505 100%
+    );
+
+  color: #f5f1e8;
+
+  padding: 80px 30px;
+}
+
+.message-content {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+.message-intro {
+  margin: 0;
+
+  max-width: 500px;
+
+  font-size: 0.9rem;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.15rem;
+
+  color: #aaa;
+}
+
+.message-main {
+  margin: 25px 0 0;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(2.2rem, 8vw, 4rem);
+
+  font-weight: 400;
+
+  line-height: 1.25;
+
+  text-align: center;
+
+  letter-spacing: 0.02em;
+}
+
+.message-star {
+  position: absolute;
+
+  top: 12%;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  color: #c9b27c;
+
+  font-size: 1.4rem;
+
+  opacity: 0.7;
+
+  z-index: 3;
+
+  pointer-events: none;
+}
+
+.message-highlight {
+  margin: 0;
+
+  max-width: 420px;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(1.3rem, 5vw, 2rem);
+
+  line-height: 1.6;
+
+  text-align: center;
+
+  color: #f5f1e8;
+}
+
+.message .particles {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 1;
+}

@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import "./Location.css";
 
 const particles = Array.from({ length: 25 }, (_, index) => ({
   id: index,

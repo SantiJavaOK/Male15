@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import Particles from "./Particles";
+import "./Hero.css";
 
 function Hero() {
   return (

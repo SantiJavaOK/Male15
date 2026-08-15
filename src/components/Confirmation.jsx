@@ -1,13 +1,18 @@
 import { useState } from "react";
 import Reveal from "./Reveal";
+import "./Confirmation.css";
 
 function Confirmation() {
   const phone = "5491540749601";
 
   const [name, setName] = useState("");
 
-  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
-    `Confirmo asistencia al cumple de Male: ${name.trim()}  💕🎉`
+  const confirmUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
+    `Confirmo asistencia al cumple de Male: ${name.trim()} 💕🎉`
+  )}`;
+
+  const declineUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
+    `Hola Male! Soy ${name.trim()}. Lamentablemente no voy a poder asistir a tus 15. Te aviso para que lo tengas en cuenta. ❤️`
   )}`;
 
   return (
@@ -57,7 +62,7 @@ function Confirmation() {
 
       <Reveal delay={900}>
         <a
-          href={name.trim() ? whatsappUrl : undefined}
+          href={name.trim() ? confirmUrl : undefined}
           target="_blank"
           rel="noopener noreferrer"
           className={`whatsapp-button ${
@@ -81,7 +86,25 @@ function Confirmation() {
         </a>
       </Reveal>
 
-      <Reveal delay={1200}>
+      <Reveal delay={1100}>
+        <a
+          href={name.trim() ? declineUrl : undefined}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`decline-button ${
+            !name.trim() ? "whatsapp-disabled" : ""
+          }`}
+          onClick={(e) => {
+            if (!name.trim()) {
+              e.preventDefault();
+            }
+          }}
+        >
+          NO PODRÉ ASISTIR
+        </a>
+      </Reveal>
+
+      <Reveal delay={1300}>
         <div className="confirmation-footer">
           <span>MALE</span>
           <span className="confirmation-star">✦</span>

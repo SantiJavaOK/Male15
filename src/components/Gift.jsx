@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Reveal from "./Reveal";
 import Particles from "./Particles";
+import "./Gift.css";
 
 function Gift() {
   const [copied, setCopied] = useState(false);
