@@ -101,3 +101,32 @@
 .location-icon {
   font-size: 1.2rem;
 }
+
+.location-address-divider {
+  width: 120px;
+
+  height: 1px;
+
+  margin: 35px auto 25px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(201, 178, 124, 0.8),
+    transparent
+  );
+}
+
+.location-address {
+  margin: 0;
+
+  color: #aaa;
+
+  font-size: 0.75rem;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.12rem;
+
+  text-align: center;
+}

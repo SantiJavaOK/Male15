@@ -69,6 +69,18 @@ function Location() {
         </a>
       </Reveal>
 
+      <Reveal delay={800}>
+  <div className="location-address-divider" />
+</Reveal>
+
+<Reveal delay={1000}>
+  <p className="location-address">
+    Av. Pres. Dr. Néstor Kirchner 1043
+    <br />
+    Berazategui, Buenos Aires
+  </p>
+</Reveal>
+
     </section>
   );
 }
