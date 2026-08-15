@@ -4,6 +4,7 @@ function EventInfo() {
       <p>
         Una noche especial para celebrar,
         disfrutar y compartir juntos.
+        Te animvas?
       </p>
     </section>
   );
