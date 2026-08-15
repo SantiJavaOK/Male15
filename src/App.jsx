@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Message from "./components/Message";
 import Location from "./components/Location";
 import Confirmation from "./components/Confirmation";
+import DressCode from "./components/DressCode";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Message />
       <Location />
+      <DressCode />
       <Confirmation />
     </main>
   );
