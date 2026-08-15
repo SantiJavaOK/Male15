@@ -75,13 +75,24 @@ section {
 }
 
 .hero-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
   margin-top: 12px;
 
   font-size: 1.1rem;
-
   letter-spacing: 0.25rem;
 
   color: #c9b27c;
+}
+
+.hero-time-separator {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin: 2px 0;
+  color: #f5f1e8;
 }
 
 .hero-decoration {
@@ -284,9 +295,11 @@ section {
 
   color: #aaa;
 
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 
   letter-spacing: 0.2rem;
+
+  z-index: 2;
 }
 
 .scroll-arrow {
@@ -576,4 +589,65 @@ section {
   color: #c9b27c;
 
   font-size: 0.9rem;
+}
+
+.hero .particles {
+  position: absolute;
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.hero > *:not(.particles) {
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background: #e8e8e8;
+
+  box-shadow:
+    0 0 5px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(220, 220, 220, 0.4);
+
+  opacity: 0;
+
+  animation:
+    particleFloat
+    ease-in-out
+    infinite;
+}
+
+@keyframes particleFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.7);
+  }
+
+  25% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1);
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-35px) scale(0.7);
+  }
 }

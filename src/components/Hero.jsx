@@ -1,9 +1,10 @@
 import Reveal from "./Reveal";
+import Particles from "./Particles";
 
 function Hero() {
   return (
     <section className="hero">
-
+      <Particles count={30} />
       <div className="hero-decoration hero-decoration-top">
         ✦
       </div>
@@ -29,10 +30,12 @@ function Hero() {
       </Reveal>
 
       <Reveal>
-        <p className="hero-time">
-          21:30 HS A 2:30 HS
-        </p>
-      </Reveal>
+  <p className="hero-time">
+    <span>21:30 HS</span>
+    <span className="hero-time-separator">A</span>
+    <span>2:30 HS</span>
+  </p>
+</Reveal>
 
       <div className="scroll-indicator">
         <span>DESLIZÁ</span>
