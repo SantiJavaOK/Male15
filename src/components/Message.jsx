@@ -7,6 +7,12 @@ function Message() {
 
       <Particles count={18} />
 
+      <div className="message-star">
+        <Reveal delay={1000}>
+          <span>✦</span>
+        </Reveal>
+      </div>
+
       <div className="message-content">
 
         <Reveal>
@@ -21,12 +27,6 @@ function Message() {
             <br />
             para siempre...
           </p>
-        </Reveal>
-
-        <Reveal delay={1000}>
-          <div className="message-star">
-            ✦
-          </div>
         </Reveal>
 
         <Reveal delay={1300}>
