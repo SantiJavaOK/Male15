@@ -15,7 +15,7 @@ function Hero() {
       </Reveal>
 
       <Reveal>
-        <h1>MALE</h1>
+        <h1>Male</h1>
       </Reveal>
 
       <Reveal>
@@ -24,13 +24,13 @@ function Hero() {
 
       <Reveal>
         <p className="hero-date">
-          26 · 09 · 2026
+          SÁBADO 26 de Septiembre
         </p>
       </Reveal>
 
       <Reveal>
         <p className="hero-time">
-          21:30 HS
+          21:30 HS A 2:30 HS
         </p>
       </Reveal>
 
