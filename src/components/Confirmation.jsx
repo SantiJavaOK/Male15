@@ -21,7 +21,7 @@ function Confirmation() {
 
       <Reveal delay={200}>
         <p className="section-title">
-          ¿NOS ACOMPAÑÁS?
+          ¿ME ACOMPAÑÁS?
         </p>
       </Reveal>
 

@@ -53,18 +53,6 @@ function Location() {
         <div className="location-divider" />
       </Reveal>
 
-      <Reveal delay={800}>
-        <p className="location-date">
-          SÁBADO 26 DE SEPTIEMBRE
-        </p>
-      </Reveal>
-
-      <Reveal delay={1000}>
-        <p className="location-time">
-          21:30 HS
-        </p>
-      </Reveal>
-
       <Reveal delay={1200}>
         <a
           href={mapsUrl}
