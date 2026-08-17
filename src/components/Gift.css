@@ -33,13 +33,21 @@
 
 .gift-star {
   position: absolute;
-  top: 4%;
+
+  top: clamp(25px, 4vh, 45px);
+
   left: 0;
+
   width: 100%;
+
   text-align: center;
+
   color: #c9b27c;
+
   font-size: 1.4rem;
+
   opacity: 0.7;
+
   z-index: 3;
 }
 
