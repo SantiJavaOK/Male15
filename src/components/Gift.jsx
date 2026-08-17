@@ -27,10 +27,6 @@ function Gift() {
 
       <Particles count={15} />
 
-      <div className="gift-star">
-        ✦
-      </div>
-
       <div className="gift-content">
 
         <Reveal>
