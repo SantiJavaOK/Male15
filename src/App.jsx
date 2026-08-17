@@ -6,6 +6,7 @@ import Location from "./components/Location";
 import Confirmation from "./components/Confirmation";
 import DressCode from "./components/DressCode";
 import Gift from "./components/Gift";
+import ListMusic from "./components/ListMusic";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <DressCode />
       <Gift />
       <Confirmation />
+      <ListMusic />
     </main>
   );
 }
