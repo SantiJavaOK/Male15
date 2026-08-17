@@ -4,7 +4,7 @@ import "./ListMusic.css";
 // Reemplazá esta URL por la playlist real de Spotify.
 // Ejemplo: https://open.spotify.com/playlist/XXXXXXXXXXXXXXXX
 const spotifyPlaylistUrl =
-  "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M";
+  "https://open.spotify.com/playlist/7wpMpZrKfNglHQMRUrfr7Q";
 
 const songs = [
   {
