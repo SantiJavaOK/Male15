@@ -50,11 +50,6 @@ function Gift() {
         </Reveal>
 
 
-          <div className="gift-divider">
-            ✦
-          </div>
-
-
         <Reveal delay={900}>
           <p className="gift-alias-label">
             ALIAS
