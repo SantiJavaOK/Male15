@@ -34,9 +34,9 @@ function DressCode() {
 
         <Reveal delay={1100}>
           <p className="dress-code-text">
-            Elegante Sport, cómodo y listo
+            Un look especial para una noche
             <br />
-            para disfrutar la noche.
+            llena de momentos inolvidables.
           </p>
         </Reveal>
 
