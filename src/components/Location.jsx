@@ -33,7 +33,6 @@ function Location() {
         ))}
       </div>
 
-      {/* Estrella FUERA del componente Reveal */}
       <div className="location-decoration">
         ✦
       </div>
