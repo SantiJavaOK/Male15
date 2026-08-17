@@ -1,19 +1,21 @@
 .hero {
   position: relative;
-
   min-height: 100vh;
-
   overflow: hidden;
-
-  background:
-    radial-gradient(
-      circle at center,
-      #252525 0%,
-      #111111 45%,
-      #050505 100%
-    );
-
+  background: radial-gradient(
+    circle at center,
+    #252525 0%,
+    #111111 45%,
+    #050505 100%
+  );
   color: #f5f1e8;
+
+  /* Agregá esto para centrar todo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-subtitle {
@@ -23,6 +25,7 @@
   letter-spacing: 0.6rem;
 
   color: #c9b27c;
+  margin-right: -0.6rem;
 }
 
 .hero h1 {
@@ -61,16 +64,12 @@
 .hero-time {
   display: flex;
   flex-direction: row;
+  justify-content: center; /* Agregá esto */
   align-items: center;
-
   gap: 14px;
-
   margin-top: 12px;
-
   font-size: 1.1rem;
-
   letter-spacing: 0.25rem;
-
   color: #c9b27c;
 }
 
