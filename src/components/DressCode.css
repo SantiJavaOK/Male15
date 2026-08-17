@@ -10,8 +10,6 @@
       #050505 100%
     );
   color: #f5f1e8;
-
-  /* Agrega estas 3 líneas para el centrado */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,13 +17,9 @@
 
 .dress-code .particles {
   position: absolute;
-
   inset: 0;
-
   overflow: hidden;
-
   pointer-events: none;
-
   z-index: 1;
 }
 
@@ -36,14 +30,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
-  /* Agrega esto para asegurar que el bloque ocupe el ancho correcto */
   width: 100%; 
 }
 
 .dress-code-star {
   position: absolute;
-
   top: 12%;
   left: 0;
 

@@ -1,10 +1,7 @@
 .gift {
   position: relative;
-
   min-height: 100vh;
-
   overflow: hidden;
-
   background:
     radial-gradient(
       circle at center,
@@ -18,112 +15,74 @@
 
 .gift .particles {
   position: absolute;
-
   inset: 0;
-
   overflow: hidden;
-
   pointer-events: none;
-
   z-index: 1;
 }
 
 .gift-content {
   position: relative;
-
   z-index: 2;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
-
   text-align: center;
 }
 
 .gift-star {
   position: absolute;
-
-  top: 8%;
+  top: 4%;
   left: 0;
-
   width: 100%;
-
   text-align: center;
-
   color: #c9b27c;
-
   font-size: 1.4rem;
-
   opacity: 0.7;
-
   z-index: 3;
 }
 
 .gift-title {
   margin: 0;
-
   color: #c9b27c;
-
   font-size: 0.75rem;
-
   letter-spacing: 0.5rem;
 }
 
 .gift-message {
   margin-top: 40px;
-
   max-width: 550px;
-
   font-family: Georgia, serif;
-
   font-size: clamp(1.2rem, 4.5vw, 1.8rem);
-
   line-height: 1.8;
-
   text-align: center;
 }
 
 .gift-divider {
   margin: 45px 0 35px;
-
   color: #c9b27c;
-
   font-size: 1rem;
 }
 
 .gift-alias-label {
   margin: 0;
-
   color: #aaa;
-
   font-size: 0.65rem;
-
   letter-spacing: 0.35rem;
 }
 
 .gift-alias {
   margin: 12px 0 0;
-
   padding: 12px 22px;
-
   border: 1px solid rgba(201, 178, 124, 0.5);
-
   border-radius: 30px;
-
   background: rgba(201, 178, 124, 0.05);
-
   color: #f5f1e8;
-
   font-family: Georgia, serif;
-
   font-size: 1.4rem;
-
   letter-spacing: 0.08rem;
-
   cursor: pointer;
-
   transition:
     background 0.3s ease,
     transform 0.3s ease,
@@ -132,9 +91,7 @@
 
 .gift-alias:hover {
   background: rgba(201, 178, 124, 0.15);
-
   border-color: #c9b27c;
-
   transform: translateY(-2px);
 }
 
@@ -144,31 +101,20 @@
 
 .gift-thanks {
   margin-top: 45px;
-
   color: #c9b27c;
-
   font-family: Georgia, serif;
-
   font-size: 1.2rem;
-
   font-style: italic;
 }
 
 .gift-copy-message {
   margin: 8px 0 0;
-
   min-height: 18px;
-
   color: #777;
-
   font-size: 0.55rem;
-
   letter-spacing: 0.15rem;
-
   text-transform: uppercase;
-
   opacity: 1;
-
   transition: color 0.3s ease;
 }
 
