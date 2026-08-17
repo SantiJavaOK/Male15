@@ -155,23 +155,23 @@
 }
 
 .gift-copy-message {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
 
   min-height: 18px;
 
-  color: #aaa;
+  color: #777;
 
-  font-size: 0.65rem;
+  font-size: 0.55rem;
 
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.15rem;
 
-  opacity: 0;
+  text-transform: uppercase;
 
-  transition: opacity 0.3s ease;
+  opacity: 1;
+
+  transition: color 0.3s ease;
 }
 
 .gift-copy-message.visible {
   color: #c9b27c;
-
-  opacity: 1;
 }

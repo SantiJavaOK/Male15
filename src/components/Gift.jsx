@@ -69,8 +69,8 @@ function Gift() {
           </button>
 
           <p className={`gift-copy-message ${copied ? "visible" : ""}`}>
-            {copied ? "✓ Alias copiado" : "Tocá para copiar"}
-          </p>
+  {copied ? "✓ ALIAS COPIADO" : "TOCÁ EL ALIAS PARA COPIARLO"}
+</p>
         </Reveal>
 
         <Reveal delay={1200}>

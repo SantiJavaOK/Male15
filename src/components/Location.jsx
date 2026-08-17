@@ -54,7 +54,31 @@ function Location() {
         <div className="location-divider" />
       </Reveal>
 
-      <Reveal delay={1200}>
+      <Reveal delay={800}>
+        <p className="location-date">
+          26 DE SEPTIEMBRE
+        </p>
+      </Reveal>
+
+      <Reveal delay={900}>
+        <p className="location-time">
+          21:30 HS
+        </p>
+      </Reveal>
+
+      <Reveal delay={1000}>
+        <div className="location-address-divider" />
+      </Reveal>
+
+      <Reveal delay={1100}>
+        <p className="location-address">
+          Av. Pres. Dr. Néstor Kirchner 1043
+          <br />
+          Berazategui, Buenos Aires
+        </p>
+      </Reveal>
+
+      <Reveal delay={1300}>
         <a
           href={mapsUrl}
           target="_blank"
@@ -68,18 +92,6 @@ function Location() {
           CÓMO LLEGAR
         </a>
       </Reveal>
-
-      <Reveal delay={800}>
-  <div className="location-address-divider" />
-</Reveal>
-
-<Reveal delay={1000}>
-  <p className="location-address">
-    Av. Pres. Dr. Néstor Kirchner 1043
-    <br />
-    Berazategui, Buenos Aires
-  </p>
-</Reveal>
 
     </section>
   );
