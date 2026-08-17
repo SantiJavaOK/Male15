@@ -35,13 +35,24 @@
 }
 
 .location-decoration {
-  margin-bottom: 35px;
-
+  /* Propiedades de posicionamiento agregadas */
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 100%;
+  
+  /* Propiedades de alineación agregadas */
+  display: flex;
+  justify-content: center;
+  
+  /* Propiedades visuales (mantenidas) */
   color: #c9b27c;
-
   font-size: 1.4rem;
-
   opacity: 0.7;
+  
+  /* Capa y eventos agregados */
+  z-index: 3;
+  pointer-events: none;
 }
 
 .location .section-title {
@@ -52,6 +63,7 @@
   font-size: 0.75rem;
 
   letter-spacing: 0.5rem;
+  margin-top: 80px;
 }
 
 .location h2 {

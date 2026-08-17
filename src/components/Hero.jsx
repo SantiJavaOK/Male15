@@ -30,10 +30,10 @@ function Hero() {
         </p>
       </Reveal>
 
-      <Reveal>
+<Reveal>
   <p className="hero-time">
     <span>21:30 HS</span>
-    <span className="hero-time-separator">a</span>
+    <span className="hero-time-separator">✦</span> {/* O podés usar un • */}
     <span>02:30 HS</span>
   </p>
 </Reveal>

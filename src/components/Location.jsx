@@ -11,12 +11,11 @@ const particles = Array.from({ length: 25 }, (_, index) => ({
 }));
 
 function Location() {
-  const mapsUrl =
-    "https://maps.app.goo.gl/pTvvHnwyBPg4oSg46";
+  const mapsUrl = "https://maps.app.goo.gl/pTvvHnwyBPg4oSg46";
 
   return (
     <section className="location">
-
+      
       <div className="location-particles">
         {particles.map((particle) => (
           <span
@@ -34,11 +33,10 @@ function Location() {
         ))}
       </div>
 
-      <Reveal>
-        <div className="location-decoration">
-          ✦
-        </div>
-      </Reveal>
+      {/* Estrella FUERA del componente Reveal */}
+      <div className="location-decoration">
+        ✦
+      </div>
 
       <Reveal delay={200}>
         <p className="section-title">
@@ -88,7 +86,6 @@ function Location() {
           <span className="location-icon">
             ⌖
           </span>
-
           CÓMO LLEGAR
         </a>
       </Reveal>

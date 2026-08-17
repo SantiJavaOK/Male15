@@ -60,10 +60,10 @@
 
 .hero-time {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 
-  gap: 4px;
+  gap: 14px;
 
   margin-top: 12px;
 
