@@ -16,9 +16,11 @@ function Hero() {
         </p>
       </Reveal>
 
-      <Reveal>
-        <h1>Male</h1>
-      </Reveal>
+<Reveal>
+  <h1 className="notranslate" translate="no">
+    Male
+  </h1>
+</Reveal>
 
       <Reveal>
         <div className="hero-divider" />
